@@ -1,0 +1,3 @@
+/** reservations mapper — scaffold */
+export {};
+

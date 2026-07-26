@@ -1,0 +1,3 @@
+/** rates repository — scaffold */
+export {};
+

@@ -1,0 +1,3 @@
+/** rooms model — scaffold */
+export {};
+

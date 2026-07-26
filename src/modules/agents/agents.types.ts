@@ -1,0 +1,3 @@
+/** agents types — scaffold */
+export {};
+

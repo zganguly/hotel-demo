@@ -1,0 +1,3 @@
+/** payments schema — scaffold */
+export {};
+

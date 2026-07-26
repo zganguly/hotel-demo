@@ -1,0 +1,3 @@
+/** properties service — scaffold */
+export {};
+

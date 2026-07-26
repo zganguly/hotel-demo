@@ -1,0 +1,3 @@
+/** guests types — scaffold */
+export {};
+

@@ -1,0 +1,3 @@
+/** rooms mapper — scaffold */
+export {};
+

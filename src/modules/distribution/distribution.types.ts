@@ -1,0 +1,3 @@
+/** distribution types — scaffold */
+export {};
+

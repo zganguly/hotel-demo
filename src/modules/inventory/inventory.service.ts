@@ -1,0 +1,3 @@
+/** inventory service — scaffold */
+export {};
+

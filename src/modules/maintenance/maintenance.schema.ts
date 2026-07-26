@@ -1,0 +1,3 @@
+/** maintenance schema — scaffold */
+export {};
+

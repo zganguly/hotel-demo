@@ -1,0 +1,3 @@
+/** cashier types — scaffold */
+export {};
+

@@ -1,0 +1,3 @@
+/** notifications schema — scaffold */
+export {};
+

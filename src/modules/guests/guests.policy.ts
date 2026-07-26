@@ -1,0 +1,3 @@
+/** guests policy — scaffold */
+export {};
+

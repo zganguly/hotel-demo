@@ -1,0 +1,3 @@
+/** companies errors — scaffold */
+export {};
+

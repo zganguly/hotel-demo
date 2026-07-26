@@ -1,0 +1,3 @@
+/** payments types — scaffold */
+export {};
+

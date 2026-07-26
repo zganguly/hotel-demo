@@ -1,0 +1,14 @@
+---
+globs: src/modules/**/*.ts, src/lib/db/**/*.ts, scripts/**/*.ts
+alwaysApply: false
+---
+
+- Reuse one MongoClient per Node.js process.
+- Use MongoDB transactions for multi-document reservation, allocation, payment, ledger, and night-audit mutations.
+- Every property-owned record contains propertyId.
+- Store money as integer minor units and always store currency.
+- Store timestamps in UTC and hotel business dates as YYYY-MM-DD property-local dates.
+- Add and verify required indexes when introducing a query.
+- Never rely on a TTL deletion occurring at an exact second.
+- Archive referenced master data instead of deleting it.
+- Financial records are reversed; they are not rewritten or physically deleted.

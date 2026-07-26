@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1D3449"/>
+      <stop offset="1" stop-color="#0B1420"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E7C990"/>
+      <stop offset="0.55" stop-color="#C89B5D"/>
+      <stop offset="1" stop-color="#A97F44"/>
+    </linearGradient>
+    <mask id="moon">
+      <rect width="64" height="64" fill="black"/>
+      <circle cx="45.5" cy="16.5" r="7" fill="white"/>
+      <circle cx="48.8" cy="13.8" r="6" fill="black"/>
+    </mask>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <rect width="64" height="64" fill="url(#gold)" mask="url(#moon)"/>
+  <rect x="18" y="20" width="28" height="34" rx="3.5" fill="#16273C" stroke="url(#gold)" stroke-width="2.5"/>
+  <rect x="24" y="26" width="6" height="7" rx="1.2" fill="#E7C990"/>
+  <rect x="34" y="26" width="6" height="7" rx="1.2" fill="#E7C990" opacity="0.45"/>
+  <rect x="24" y="37" width="6" height="7" rx="1.2" fill="#E7C990" opacity="0.8"/>
+  <rect x="34" y="37" width="6" height="7" rx="1.2" fill="#E7C990"/>
+  <path d="M28 54v-4.6a4 4 0 0 1 8 0V54Z" fill="url(#gold)"/>
+</svg>

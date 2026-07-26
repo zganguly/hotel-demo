@@ -1,0 +1,3 @@
+/** stock errors — scaffold */
+export {};
+

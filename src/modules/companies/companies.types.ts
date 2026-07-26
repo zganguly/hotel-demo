@@ -1,0 +1,3 @@
+/** companies types — scaffold */
+export {};
+

@@ -1,0 +1,3 @@
+/** cashier repository — scaffold */
+export {};
+

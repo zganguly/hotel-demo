@@ -1,0 +1,3 @@
+/** properties schema — scaffold */
+export {};
+

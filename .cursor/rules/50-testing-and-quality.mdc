@@ -1,0 +1,12 @@
+---
+globs: src/**/*.ts, src/**/*.tsx, tests/**/*.ts, tests/**/*.tsx
+alwaysApply: false
+---
+
+- Add unit tests for domain calculations.
+- Add transaction-backed integration tests for availability, booking, room allocation, checkout, payment, and night audit.
+- Add Playwright tests for complete Admin and Manager journeys.
+- Add an accessibility check for every major page template.
+- Include concurrency tests for the last available room.
+- A test must verify behavior, not only implementation details.
+- Do not mark work complete while tests are skipped without a documented reason.

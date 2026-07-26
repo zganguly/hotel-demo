@@ -1,0 +1,3 @@
+/** agents errors — scaffold */
+export {};
+

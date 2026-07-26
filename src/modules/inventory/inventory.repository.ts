@@ -1,0 +1,3 @@
+/** inventory repository — scaffold */
+export {};
+

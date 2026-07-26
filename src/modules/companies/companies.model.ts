@@ -1,0 +1,3 @@
+/** companies model — scaffold */
+export {};
+

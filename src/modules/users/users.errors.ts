@@ -1,0 +1,3 @@
+/** users errors — scaffold */
+export {};
+

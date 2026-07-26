@@ -1,0 +1,3 @@
+/** stock repository — scaffold */
+export {};
+

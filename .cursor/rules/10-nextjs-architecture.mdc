@@ -1,0 +1,13 @@
+---
+globs: src/**/*.ts, src/**/*.tsx
+alwaysApply: false
+---
+
+- Pages compose features; they do not contain database queries.
+- Route handlers validate input, authenticate, authorize, call a service, and map the result.
+- Domain services own transactions and business rules.
+- Repositories own database access.
+- Use Server Components for initial data and permission-aware rendering.
+- Use TanStack Query only where live client-side refetching, optimistic updates, or background refresh is valuable.
+- Never import server-only modules into Client Components.
+- Do not add a custom Next.js server.

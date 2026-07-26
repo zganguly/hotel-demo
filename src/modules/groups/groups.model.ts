@@ -1,0 +1,3 @@
+/** groups model — scaffold */
+export {};
+

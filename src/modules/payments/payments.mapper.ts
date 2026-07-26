@@ -1,0 +1,3 @@
+/** payments mapper — scaffold */
+export {};
+

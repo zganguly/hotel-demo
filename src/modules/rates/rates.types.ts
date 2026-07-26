@@ -1,0 +1,3 @@
+/** rates types — scaffold */
+export {};
+

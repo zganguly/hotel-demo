@@ -1,0 +1,3 @@
+/** stock model — scaffold */
+export {};
+

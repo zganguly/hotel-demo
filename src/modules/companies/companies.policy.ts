@@ -1,0 +1,3 @@
+/** companies policy — scaffold */
+export {};
+

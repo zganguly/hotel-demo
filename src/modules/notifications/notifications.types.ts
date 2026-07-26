@@ -1,0 +1,3 @@
+/** notifications types — scaffold */
+export {};
+

@@ -1,0 +1,3 @@
+/** users schema — scaffold */
+export {};
+

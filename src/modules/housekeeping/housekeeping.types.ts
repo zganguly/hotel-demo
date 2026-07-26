@@ -1,0 +1,3 @@
+/** housekeeping types — scaffold */
+export {};
+

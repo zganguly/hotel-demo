@@ -1,0 +1,3 @@
+/** reports schema — scaffold */
+export {};
+

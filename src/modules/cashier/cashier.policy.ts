@@ -1,0 +1,3 @@
+/** cashier policy — scaffold */
+export {};
+

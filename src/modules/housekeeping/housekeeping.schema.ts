@@ -1,0 +1,3 @@
+/** housekeeping schema — scaffold */
+export {};
+

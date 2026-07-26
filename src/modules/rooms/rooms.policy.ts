@@ -1,0 +1,3 @@
+/** rooms policy — scaffold */
+export {};
+

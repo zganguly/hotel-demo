@@ -1,0 +1,3 @@
+/** rates service — scaffold */
+export {};
+

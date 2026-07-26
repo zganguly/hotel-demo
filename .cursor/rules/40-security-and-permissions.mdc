@@ -1,0 +1,14 @@
+---
+alwaysApply: true
+---
+
+- Authenticate and authorize on the server for every protected mutation and data read.
+- UI visibility is not authorization.
+- Only ADMIN and MANAGER account types exist.
+- MANAGER access is restricted by property scope, module permissions, and approval limits.
+- Redact secrets, access tokens, identity-document values, and payment details from logs.
+- Never store CVV or raw card numbers.
+- Require reason codes for refunds, voids, discounts, write-offs, overrides, and reversals.
+- Create an audit event for every sensitive or high-risk action.
+- Validate webhook signatures before processing.
+- Use idempotency keys for booking, payment, channel, and scheduled operations.

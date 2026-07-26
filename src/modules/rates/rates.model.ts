@@ -1,0 +1,3 @@
+/** rates model — scaffold */
+export {};
+

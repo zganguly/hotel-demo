@@ -1,0 +1,12 @@
+---
+alwaysApply: true
+---
+
+- Use TypeScript in strict mode.
+- Use the Next.js App Router.
+- Use Server Components by default and Client Components only for browser interaction.
+- Keep domain logic out of React components and route handlers.
+- Never weaken validation or security to make a test pass.
+- Never create fake production behavior with TODO-only implementations.
+- Keep BUILD_STATUS.md and DECISIONS.md updated.
+- Run typecheck, lint, tests, and production build before completing a phase.

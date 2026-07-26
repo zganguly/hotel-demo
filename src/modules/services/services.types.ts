@@ -1,0 +1,3 @@
+/** services types — scaffold */
+export {};
+

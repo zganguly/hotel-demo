@@ -1,0 +1,3 @@
+/** payments errors — scaffold */
+export {};
+

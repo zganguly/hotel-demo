@@ -1,0 +1,3 @@
+/** properties mapper — scaffold */
+export {};
+

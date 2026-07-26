@@ -1,0 +1,3 @@
+/** stock policy — scaffold */
+export {};
+

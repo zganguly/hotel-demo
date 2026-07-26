@@ -1,0 +1,3 @@
+/** inventory model — scaffold */
+export {};
+

@@ -1,0 +1,3 @@
+/** users model — scaffold */
+export {};
+

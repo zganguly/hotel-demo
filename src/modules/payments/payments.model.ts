@@ -1,0 +1,3 @@
+/** payments model — scaffold */
+export {};
+

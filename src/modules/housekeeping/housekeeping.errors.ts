@@ -1,0 +1,3 @@
+/** housekeeping errors — scaffold */
+export {};
+

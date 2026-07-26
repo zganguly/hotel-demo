@@ -1,0 +1,3 @@
+/** inventory policy — scaffold */
+export {};
+

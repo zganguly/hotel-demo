@@ -1,0 +1,3 @@
+/** inventory mapper — scaffold */
+export {};
+

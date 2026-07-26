@@ -1,0 +1,3 @@
+/** rates errors — scaffold */
+export {};
+

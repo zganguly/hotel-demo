@@ -1,0 +1,3 @@
+/** cashier model — scaffold */
+export {};
+

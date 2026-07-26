@@ -1,0 +1,3 @@
+/** notifications service — scaffold */
+export {};
+

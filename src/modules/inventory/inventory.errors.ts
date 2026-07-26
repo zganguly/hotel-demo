@@ -1,0 +1,3 @@
+/** inventory errors — scaffold */
+export {};
+

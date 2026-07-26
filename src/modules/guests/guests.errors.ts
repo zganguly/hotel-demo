@@ -1,0 +1,3 @@
+/** guests errors — scaffold */
+export {};
+

@@ -1,0 +1,3 @@
+/** properties model — scaffold */
+export {};
+

@@ -1,0 +1,3 @@
+/** notifications mapper — scaffold */
+export {};
+

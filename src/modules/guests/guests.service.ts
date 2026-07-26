@@ -1,0 +1,3 @@
+/** guests service — scaffold */
+export {};
+

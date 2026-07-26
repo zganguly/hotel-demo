@@ -1,0 +1,3 @@
+/** agents schema — scaffold */
+export {};
+

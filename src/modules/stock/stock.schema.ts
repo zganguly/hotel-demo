@@ -1,0 +1,3 @@
+/** stock schema — scaffold */
+export {};
+

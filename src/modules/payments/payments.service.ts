@@ -1,0 +1,3 @@
+/** payments service — scaffold */
+export {};
+

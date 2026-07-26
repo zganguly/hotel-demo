@@ -1,0 +1,3 @@
+/** rooms schema — scaffold */
+export {};
+

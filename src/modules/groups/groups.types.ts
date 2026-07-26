@@ -1,0 +1,3 @@
+/** groups types — scaffold */
+export {};
+

@@ -1,0 +1,3 @@
+/** groups schema — scaffold */
+export {};
+

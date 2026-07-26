@@ -1,0 +1,3 @@
+/** properties errors — scaffold */
+export {};
+

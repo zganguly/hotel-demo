@@ -1,0 +1,3 @@
+/** distribution schema — scaffold */
+export {};
+

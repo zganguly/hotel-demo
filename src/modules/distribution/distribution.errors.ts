@@ -1,0 +1,3 @@
+/** distribution errors — scaffold */
+export {};
+

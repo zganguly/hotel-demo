@@ -1,0 +1,3 @@
+/** cashier mapper — scaffold */
+export {};
+

@@ -1,0 +1,3 @@
+/** agents policy — scaffold */
+export {};
+

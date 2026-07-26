@@ -1,0 +1,3 @@
+/** rooms repository — scaffold */
+export {};
+

@@ -1,0 +1,3 @@
+/** companies repository — scaffold */
+export {};
+

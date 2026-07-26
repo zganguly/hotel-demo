@@ -1,0 +1,3 @@
+/** notifications policy — scaffold */
+export {};
+

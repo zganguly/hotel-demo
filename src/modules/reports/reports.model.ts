@@ -1,0 +1,3 @@
+/** reports model — scaffold */
+export {};
+

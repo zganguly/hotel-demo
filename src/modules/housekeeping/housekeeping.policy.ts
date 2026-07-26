@@ -1,0 +1,3 @@
+/** housekeeping policy — scaffold */
+export {};
+

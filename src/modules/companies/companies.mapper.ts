@@ -1,0 +1,3 @@
+/** companies mapper — scaffold */
+export {};
+

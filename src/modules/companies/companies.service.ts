@@ -1,0 +1,3 @@
+/** companies service — scaffold */
+export {};
+

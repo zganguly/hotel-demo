@@ -1,0 +1,3 @@
+/** guests repository — scaffold */
+export {};
+

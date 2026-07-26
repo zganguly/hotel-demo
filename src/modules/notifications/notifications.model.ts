@@ -1,0 +1,3 @@
+/** notifications model — scaffold */
+export {};
+

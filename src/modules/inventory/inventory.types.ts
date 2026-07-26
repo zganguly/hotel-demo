@@ -1,0 +1,3 @@
+/** inventory types — scaffold */
+export {};
+

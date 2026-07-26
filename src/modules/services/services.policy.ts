@@ -1,0 +1,3 @@
+/** services policy — scaffold */
+export {};
+

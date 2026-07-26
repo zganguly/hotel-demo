@@ -1,0 +1,3 @@
+/** groups service — scaffold */
+export {};
+

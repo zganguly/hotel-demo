@@ -1,0 +1,3 @@
+/** reservations repository — scaffold */
+export {};
+

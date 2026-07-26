@@ -1,0 +1,3 @@
+/** reservations errors — scaffold */
+export {};
+

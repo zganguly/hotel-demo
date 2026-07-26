@@ -1,0 +1,3 @@
+/** distribution model — scaffold */
+export {};
+

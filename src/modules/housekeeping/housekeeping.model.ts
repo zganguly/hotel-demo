@@ -1,0 +1,3 @@
+/** housekeeping model — scaffold */
+export {};
+

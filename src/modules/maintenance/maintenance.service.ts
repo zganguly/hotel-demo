@@ -1,0 +1,3 @@
+/** maintenance service — scaffold */
+export {};
+

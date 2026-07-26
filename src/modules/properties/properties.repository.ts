@@ -1,0 +1,3 @@
+/** properties repository — scaffold */
+export {};
+

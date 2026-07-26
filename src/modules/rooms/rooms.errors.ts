@@ -1,0 +1,3 @@
+/** rooms errors — scaffold */
+export {};
+

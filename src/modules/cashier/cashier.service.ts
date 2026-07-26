@@ -1,0 +1,3 @@
+/** cashier service — scaffold */
+export {};
+

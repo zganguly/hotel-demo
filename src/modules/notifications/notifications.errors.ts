@@ -1,0 +1,3 @@
+/** notifications errors — scaffold */
+export {};
+

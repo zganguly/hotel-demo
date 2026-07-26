@@ -1,0 +1,3 @@
+/** stock service — scaffold */
+export {};
+

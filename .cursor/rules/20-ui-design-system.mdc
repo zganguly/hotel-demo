@@ -1,0 +1,15 @@
+---
+globs: src/components/**/*.tsx, src/app/**/*.tsx, src/app/**/*.css
+alwaysApply: false
+---
+
+- Use the design tokens defined in this build specification.
+- Use Manrope for product UI and Cormorant Garamond only for selected marketing display text.
+- Use shadcn/ui primitives and extend them through shared components.
+- Do not hard-code colors when a semantic token exists.
+- Every data screen needs loading, empty, error, success, and permission-denied states.
+- Do not communicate status by color alone; include text and/or an icon.
+- Preserve visible keyboard focus and full keyboard operation.
+- Honor prefers-reduced-motion.
+- Three.js is allowed only on the landing and authentication experience unless explicitly approved.
+- Keep operational screens calm, fast, and data-first.

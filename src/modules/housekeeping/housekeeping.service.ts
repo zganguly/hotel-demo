@@ -1,0 +1,3 @@
+/** housekeeping service — scaffold */
+export {};
+

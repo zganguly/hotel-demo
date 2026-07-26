@@ -1,0 +1,13 @@
+---
+description: Core hotel PMS rules for reservations, rooms, folios, housekeeping, maintenance, and night audit
+alwaysApply: false
+---
+
+- A hotel stay occupies [arrivalDate, departureDate); departure date is not an occupied night.
+- Room-type inventory is consumed before a physical room must be assigned.
+- A physical room-night may have only one active allocation.
+- Out-of-order blocks reduce sellable inventory for every affected stay date.
+- Rate, tax, package, and policy values are snapshotted onto the reservation.
+- Hotel business date is separate from system time.
+- Front-office room status, housekeeping status, and maintenance status are separate state dimensions.
+- A retry must never duplicate a reservation, payment, charge, invoice, or room-and-tax posting.

@@ -1,0 +1,3 @@
+/** rates mapper — scaffold */
+export {};
+

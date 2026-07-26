@@ -1,0 +1,3 @@
+/** groups errors — scaffold */
+export {};
+

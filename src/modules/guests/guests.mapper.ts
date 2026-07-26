@@ -1,0 +1,3 @@
+/** guests mapper — scaffold */
+export {};
+

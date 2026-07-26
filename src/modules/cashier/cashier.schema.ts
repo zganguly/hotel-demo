@@ -1,0 +1,3 @@
+/** cashier schema — scaffold */
+export {};
+

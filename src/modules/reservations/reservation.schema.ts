@@ -1,0 +1,3 @@
+/** reservations schema — scaffold */
+export {};
+

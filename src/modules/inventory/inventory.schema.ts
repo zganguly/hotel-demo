@@ -1,0 +1,3 @@
+/** inventory schema — scaffold */
+export {};
+

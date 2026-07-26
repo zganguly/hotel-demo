@@ -1,0 +1,3 @@
+/** companies schema — scaffold */
+export {};
+

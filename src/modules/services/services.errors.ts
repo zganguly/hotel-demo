@@ -1,0 +1,3 @@
+/** services errors — scaffold */
+export {};
+

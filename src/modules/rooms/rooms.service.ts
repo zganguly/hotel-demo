@@ -1,0 +1,3 @@
+/** rooms service — scaffold */
+export {};
+
