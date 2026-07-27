@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Required for slim Docker / ECS images (copies .next/standalone + static).
+  output: "standalone",
   images: {
     remotePatterns: [
       {

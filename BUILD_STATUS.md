@@ -17,7 +17,7 @@ Phase 1 foundation complete through scaffolded modules; deepening domain workflo
 - Domain libs: money, hotel dates, authorize, logging, API envelope
 - Mongo models: properties, userAccess, rooms/types/inventory, reservations/holds/assignments, guests, folios, jobs/outbox/audit/approvals
 - Availability search service + `/api/v1/availability`
-- Better Auth route (`/api/auth/[...all]`) with Mongo or memory adapter
+- Better Auth route (`/api/auth/[...all]`) with Mongo or memory adapter; login uses real `signIn.email`, middleware protects `/app/*`, sign-out clears session (fixes login redirect loop)
 - Health/ready + protected cron dispatcher
 - Rich demo seed: ~90 guests/property, ~300+ reservations spanning past 20 days + next 30 days, folios + ledger lines
 - New reservation: stylish multi-room picker + required government ID upload; persists guest, rooms, folio, and ID file metadata
@@ -28,6 +28,7 @@ Phase 1 foundation complete through scaffolded modules; deepening domain workflo
 - All former "Module scaffold is ready" placeholder pages replaced with live/demo operational screens: housekeeping, maintenance, guest requests, room status, rates & inventory, night audit, stock & purchasing, reports, groups, administration overview, and the new-reservation form (working client form with validation, no scaffold text remains anywhere under `src/app/(app)/app/[propertySlug]/`)
 - Previously-missing nested nav routes now exist and render real content: reservations/waitlist, front-desk/room-queue, requests/lost-and-found, rates/packages, rates/channels, guests/companies, guests/agents, billing/cashier, billing/ar, admin/staff, admin/property, admin/users, admin/taxes, admin/integrations, admin/audit, admin/tools
 - These screens mix live Mongo-backed data (reservations, rooms, folios, room types/inventory, UserAccess, audit events, job/outbox queues) with clearly-labeled deterministic demo data where no domain model exists yet (stock items, lost & found, packages, companies, agents, staff roster, tax rules, integrations, cashier tender split)
+- AWS ECS Fargate deployment path: `output: "standalone"`, multi-stage `Dockerfile`, ECR/task-def templates under `deploy/aws/`, runbook `docs/architecture/aws-ecs-deployment.md`, GitHub Actions `.github/workflows/deploy-ecs.yml`
 
 ## In-progress features
 

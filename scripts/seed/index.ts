@@ -2,6 +2,7 @@ import { randomUUID } from "crypto";
 import { addDays, differenceInCalendarDays, format, parseISO } from "date-fns";
 import { Types } from "mongoose";
 import { connectDb } from "@/lib/db";
+import { auth } from "@/lib/auth/auth";
 import { PropertyModel, UserAccessModel } from "@/modules/properties/property.model";
 import {
   RoomInventoryDayModel,
@@ -415,8 +416,19 @@ async function seed() {
     throw new Error("Demo seed blocked in production");
   }
 
+  const demoPassword = process.env.DEMO_SEED_PASSWORD ?? "demo-password";
+
   await connectDb();
   const today = new Date();
+
+  const db = (await import("mongoose")).default.connection.db;
+  if (db) {
+    await Promise.all(
+      ["user", "session", "account", "verification"].map((collection) =>
+        db.collection(collection).deleteMany({}),
+      ),
+    );
+  }
 
   await Promise.all([
     PropertyModel.deleteMany({}),
@@ -488,6 +500,16 @@ async function seed() {
       permissions: OPS_MANAGER_PERMISSIONS,
     },
   ];
+
+  for (const user of users) {
+    await auth.api.signUpEmail({
+      body: {
+        email: user.email,
+        password: demoPassword,
+        name: user.displayName,
+      },
+    });
+  }
 
   for (const user of users) {
     await UserAccessModel.create({
@@ -591,7 +613,8 @@ async function seed() {
   }
 
   console.log("Seed complete");
-  console.log("Demo users (password via DEMO_SEED_PASSWORD env):");
+  console.log(`Demo password: ${demoPassword}`);
+  console.log("Demo users:");
   for (const user of users) console.log(` - ${user.email}`);
   console.log("Properties: harbour-view, garden-court");
   process.exit(0);

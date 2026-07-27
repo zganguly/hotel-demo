@@ -17,8 +17,9 @@ Modular Next.js monolith:
 | API | Route Handlers under `/api/v1` |
 | Language | TypeScript `strict: true` |
 | Package manager | npm |
-| Build / start | `next build` / `next start` (no custom server) |
+| Build / start | `next build` / `next start` (standalone Docker for ECS) |
 | Database | MongoDB Atlas replica set |
+| Primary deploy | AWS ECS Fargate + ALB + ECR |
 | ODM | Mongoose (+ native sessions for transactions) |
 
 ## Request flow

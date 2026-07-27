@@ -39,10 +39,16 @@ Decisions below follow `hotel-management-system-cursor-build-specification.md`. 
 
 ## ADR-008 — Background work
 
-- **Decision:** Hostinger cron hits `/api/internal/cron` with `CRON_SECRET`; MongoDB jobs are leased idempotently. Outbox pattern for external effects. No permanent second Node worker on managed hosting.
+- **Decision:** Protected cron hits `/api/internal/cron` with `CRON_SECRET`; MongoDB jobs are leased idempotently. On AWS ECS, EventBridge Scheduler triggers the endpoint; Hostinger cron remains the alternate. Outbox pattern for external effects. No permanent second Node worker required.
 - **Date:** 2026-07-24
+- **Updated:** 2026-07-26 — ECS EventBridge as primary scheduler when deploying to AWS.
 
 ## ADR-009 — First production scope
 
 - **Decision:** Launch core PMS workflows before channel/POS/purchasing/advanced RM expansions. See `docs/product/first-production-scope.md`.
 - **Date:** 2026-07-24
+
+## ADR-010 — AWS ECS Fargate deployment
+
+- **Decision:** Primary production runtime is **AWS ECS on Fargate** behind an ALB, images in ECR, secrets in Secrets Manager, logs in CloudWatch, uploads in S3, data in MongoDB Atlas. Next.js uses `output: "standalone"` with a multi-stage Docker image (Node 22). Hostinger Node Web Apps remain an alternate documented path.
+- **Date:** 2026-07-26

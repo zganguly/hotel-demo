@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { ChevronDown, LogOut, PanelLeftClose, PanelLeftOpen } from "lucide-react";
 import { NAV_GROUPS, appHref } from "@/config/navigation";
 import { LogoMark } from "@/components/brand/logo";
+import { authClient } from "@/lib/auth/auth-client";
 import { cn } from "@/lib/utils";
 
 type Badges = Partial<Record<"arrivals" | "roomQueue" | "maintenance" | "approvals", number>>;
@@ -51,6 +52,11 @@ export function AppSidebar({
       window.localStorage.setItem("sidebar-collapsed", next ? "1" : "0");
       return next;
     });
+  }
+
+  async function onSignOut() {
+    await authClient.signOut();
+    window.location.href = "/login";
   }
 
   return (
@@ -192,13 +198,14 @@ export function AppSidebar({
             )}
             {!collapsed ? <span>Collapse</span> : null}
           </button>
-          <Link
-            href="/login"
-            className="flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-nav-muted hover:bg-nav-surface hover:text-nav-text"
+          <button
+            type="button"
+            onClick={() => void onSignOut()}
+            className="flex w-full items-center gap-3 rounded-xl px-3 py-2 text-sm text-nav-muted hover:bg-nav-surface hover:text-nav-text"
           >
             <LogOut className="h-5 w-5" aria-hidden />
             {!collapsed ? <span>Sign out</span> : null}
-          </Link>
+          </button>
         </div>
       </aside>
     </>

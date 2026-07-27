@@ -1,8 +1,10 @@
-# Hostinger-compatible deployment
+# Hostinger-compatible deployment (alternate)
+
+> **Primary production target is AWS ECS Fargate.** See [`aws-ecs-deployment.md`](./aws-ecs-deployment.md).
 
 ## Plan
 
-Use Hostinger Business Web Hosting or Cloud Startup+ with Node.js Web App support (Node 22).
+Use Hostinger Business Web Hosting or Cloud Startup+ with Node.js Web App support (Node 22) only when ECS is not used.
 
 ## Deploy
 

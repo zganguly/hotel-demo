@@ -1,9 +1,12 @@
 import { NextResponse } from "next/server";
 
+/** Liveness only — no auth, MongoDB, or external dependencies. */
 export async function GET() {
-  return NextResponse.json({
-    ok: true,
-    service: "hotel-pms",
-    timestamp: new Date().toISOString(),
-  });
+  return NextResponse.json(
+    {
+      status: "ok",
+      timestamp: new Date().toISOString(),
+    },
+    { status: 200 },
+  );
 }
