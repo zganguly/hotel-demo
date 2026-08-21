@@ -127,6 +127,68 @@ export function AppSidebar({
               );
             }
 
+            if (groupHighlighted) {
+              return (
+                <div
+                  key={group.id}
+                  className="mb-2 rounded-xl bg-gradient-to-r from-[#1D3449] via-[#243f58] to-[#2a4a42] p-1.5 ring-1 ring-nav-active-accent/40"
+                >
+                  <button
+                    type="button"
+                    aria-expanded={isOpen}
+                    title={collapsed ? group.label : undefined}
+                    className="flex w-full items-center gap-3 rounded-lg px-2 py-2 text-left text-sm font-semibold text-nav-text"
+                    onClick={() =>
+                      setExpanded((prev) => ({ ...prev, [group.id]: !prev[group.id] }))
+                    }
+                  >
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-nav-active-accent/20 text-nav-active-accent">
+                      <GroupIcon className="h-4 w-4" aria-hidden />
+                    </span>
+                    {!collapsed ? (
+                      <>
+                        <span className="flex-1">{group.label}</span>
+                        <span className="rounded-full bg-nav-active-accent px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-primary">
+                          AI
+                        </span>
+                        <ChevronDown
+                          className={cn("h-4 w-4 transition", isOpen && "rotate-180")}
+                          aria-hidden
+                        />
+                      </>
+                    ) : null}
+                  </button>
+                  {isOpen && !collapsed ? (
+                    <ul className="mt-1 space-y-0.5 px-1 pb-1">
+                      {group.items.map((item) => {
+                        const href = appHref(propertySlug, item.href);
+                        const active = pathname === href || pathname.startsWith(`${href}/`);
+                        const ItemIcon = item.icon;
+                        return (
+                          <li key={item.href}>
+                            <Link
+                              href={href}
+                              aria-current={active ? "page" : undefined}
+                              onClick={onMobileClose}
+                              className={cn(
+                                "relative flex items-center gap-2 rounded-lg px-2.5 py-2 text-sm",
+                                active
+                                  ? "bg-nav-active-accent/20 text-nav-text"
+                                  : "text-nav-muted hover:bg-white/5 hover:text-nav-text",
+                              )}
+                            >
+                              {ItemIcon ? <ItemIcon className="h-4 w-4 shrink-0" aria-hidden /> : null}
+                              <span>{item.label}</span>
+                            </Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  ) : null}
+                </div>
+              );
+            }
+
             return (
               <div key={group.id} className="mb-1">
                 <button

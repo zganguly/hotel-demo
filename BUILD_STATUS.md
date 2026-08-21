@@ -24,6 +24,7 @@ Phase 1 foundation complete through scaffolded modules; deepening domain workflo
 - Reservation details page with money receipt (folio charges, payments, balance, print)
 - Full analytics dashboard: hero KPI band (occupancy, ADR, RevPAR, collections), operational count blocks, occupancy trend chart (±14 days), charges-vs-payments chart, booking status donut, source mix, room-type occupancy chart, mini month calendar with arrival heat, recent payments, and next-arrivals table (Recharts, live Mongo aggregates)
 - AI Analysis owner briefing page (static)
+- AI Conversation (OpenAI / OpenRouter from `.env`) with continuing chat turns; AI Logs menu stores request/response with request tokens, response tokens, total tokens, and datetime
 - Vitest domain tests + Playwright smoke/a11y config
 - All former "Module scaffold is ready" placeholder pages replaced with live/demo operational screens: housekeeping, maintenance, guest requests, room status, rates & inventory, night audit, stock & purchasing, reports, groups, administration overview, and the new-reservation form (working client form with validation, no scaffold text remains anywhere under `src/app/(app)/app/[propertySlug]/`)
 - Previously-missing nested nav routes now exist and render real content: reservations/waitlist, front-desk/room-queue, requests/lost-and-found, rates/packages, rates/channels, guests/companies, guests/agents, billing/cashier, billing/ar, admin/staff, admin/property, admin/users, admin/taxes, admin/integrations, admin/audit, admin/tools
