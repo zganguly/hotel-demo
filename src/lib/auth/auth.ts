@@ -29,6 +29,7 @@ export const auth = betterAuth({
   trustedOrigins: [
     appUrl,
     process.env.NEXT_PUBLIC_APP_URL,
+    "https://nxt-tst.duckdns.org",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
   ].filter((value, index, list): value is string => Boolean(value) && list.indexOf(value) === index),

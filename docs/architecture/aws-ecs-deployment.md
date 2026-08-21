@@ -56,9 +56,11 @@ Store at least:
 
 Also set non-secret env on the task or service:
 
-- `APP_URL` / `BETTER_AUTH_URL` / `NEXT_PUBLIC_APP_URL` = public HTTPS origin
+- `APP_URL` / `BETTER_AUTH_URL` / `NEXT_PUBLIC_APP_URL` = `https://nxt-tst.duckdns.org`
 - `MONGODB_DB_NAME`
 - Object storage / payment / email keys when those providers go live
+
+Single local/deployment env file: `.env` (do not commit).
 
 ### 3. IAM
 

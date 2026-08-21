@@ -30,7 +30,7 @@ Copied from the build specification. Phase work is not complete until these hold
 - [x] Core MongoDB indexes defined on inventory/assignments
 - [x] Idempotency/outbox/job models present
 - [x] Unit tests for money, dates, inventory math, authorize
-- [x] No secrets committed (`.env.example` names only)
+- [x] No secrets committed (single `.env` file, gitignored)
 
 ## Deployment
 

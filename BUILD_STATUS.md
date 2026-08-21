@@ -46,7 +46,7 @@ Phase 1 foundation complete through scaffolded modules; deepening domain workflo
 
 ## Required environment variables
 
-See `.env.example` — notably `MONGODB_URI`, `BETTER_AUTH_SECRET`, `CRON_SECRET`, payment/email/storage keys for production.
+See `.env` (single env file) — notably `APP_URL` / `BETTER_AUTH_URL` / `NEXT_PUBLIC_APP_URL` = `https://nxt-tst.duckdns.org`, plus `MONGODB_URI`, `BETTER_AUTH_SECRET`, `CRON_SECRET`.
 
 ## Latest test/build result
 

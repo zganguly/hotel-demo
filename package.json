@@ -11,7 +11,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
-    "seed": "node --env-file=.env.local --import tsx scripts/seed/index.ts"
+    "seed": "node --env-file=.env --import tsx scripts/seed/index.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",

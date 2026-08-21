@@ -14,16 +14,16 @@ Midnight Hospitality — Next.js 16 hotel property management system.
 ## Quick start
 
 ```bash
-cp .env.example .env.local
-# set MONGODB_URI and secrets
+# Configure the single env file: `.env`
+# Deployment URL: https://nxt-tst.duckdns.org
 npm install
 npm run dev
 ```
 
-Demo seed (non-production):
+Demo seed:
 
 ```bash
-DEMO_SEED_PASSWORD='ChangeMe-Demo-Only!' npm run seed
+npm run seed
 ```
 
 ## Scripts

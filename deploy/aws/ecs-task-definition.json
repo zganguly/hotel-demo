@@ -25,7 +25,10 @@
         { "name": "HOSTNAME", "value": "0.0.0.0" },
         { "name": "APP_NAME", "value": "Hotel PMS" },
         { "name": "DEFAULT_TIMEZONE", "value": "Asia/Kolkata" },
-        { "name": "MONGODB_DB_NAME", "value": "hotel-demo" }
+        { "name": "MONGODB_DB_NAME", "value": "hotel-demo" },
+        { "name": "APP_URL", "value": "https://nxt-tst.duckdns.org" },
+        { "name": "BETTER_AUTH_URL", "value": "https://nxt-tst.duckdns.org" },
+        { "name": "NEXT_PUBLIC_APP_URL", "value": "https://nxt-tst.duckdns.org" }
       ],
       "secrets": [
         {
