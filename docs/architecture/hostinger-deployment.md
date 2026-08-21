@@ -9,13 +9,21 @@ Use Hostinger Business Web Hosting or Cloud Startup+ with Node.js Web App suppor
 ## Deploy
 
 - GitHub → Hostinger auto-detect Next.js
-- Install: `npm ci`
-- Build: `npm run build`
-- Start: `npm run start`
-- No static export, no custom Node server
-- Production env vars in hPanel
-- Deploy from protected production branch
+- **Branch:** `main` (must include Tailwind packages in `dependencies`)
+- **Node version:** `22.x`
+- **Root directory:** `./`
+- **Package manager:** `npm`
+- **Build command:** `npm run build:hostinger`  
+  (runs `npm install --include=dev && next build` so Hostinger production installs still get PostCSS/Tailwind)
+- **Start:** `npm run start`
+- **Output directory:** leave blank or `.next` (not a static export)
+- App URL / env: `https://nxt-tst.duckdns.org`
+- Production env vars in hPanel from `.env`
 - Smoke-test `/api/health` after every deploy
+
+## Common build failure
+
+`Cannot find module '@tailwindcss/postcss'` means Hostinger built an old `main` where Tailwind lived in `devDependencies`. Keep `@tailwindcss/postcss`, `tailwindcss`, and `typescript` under `dependencies`.
 
 ## Hostinger-safe rules
 
